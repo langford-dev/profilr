@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Create, Download, Github, Linkedin, Share, Twitter } from "../assets/icons";
+import Image from "next/image";
 
 const Profile = () => {
 
@@ -14,7 +15,7 @@ const Profile = () => {
                 </div>
 
                 <section className="flex flex-center hero flex-column first-section">
-                    <Image src='https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg' alt='langford avatar' className="avatar-lg" />
+                    <Image width='200px' height='200px' src="https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg" alt="langford avatar" className="avatar-lg" />
                     <div className="space-50" />
                     <div className="flex-column">
                         <h1>Hey, 👋 I'm Langford Kwabena</h1>
