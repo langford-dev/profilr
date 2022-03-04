@@ -15,10 +15,10 @@ const Profile = () => {
                 </div>
 
                 <section className="flex flex-center hero flex-column first-section">
-                    <Image width='200px' height='200px' src="https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg" alt="langford avatar" className="avatar-lg" />
+                    <Image width="200px" height="200px" src="https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg" alt="langford avatar" className="avatar-lg" />
                     <div className="space-50" />
                     <div className="flex-column">
-                        <h1>Hey, 👋 I'm Langford Kwabena</h1>
+                        <h1>Hey, 👋 Im Langford Kwabena</h1>
                         <div className="space-10" />
                         <p className="subtext">Web developer</p>
                     </div>
@@ -41,7 +41,7 @@ const Profile = () => {
 
                 <section>
                     <h1 className="text-align-center">About <span className="primary-color">Me</span></h1>
-                    <div className='space-50' />
+                    <div className="space-50" />
                     <p>
                         Hello 👋 I’m Langford. A self-taught Web(3) & Software developer, Content creator and Technical Writer ✍️
 
@@ -60,25 +60,25 @@ const Profile = () => {
 
                 <section>
                     <h1 className="text-align-center">My <span className="primary-color">Experience</span> </h1>
-                    <div className='space-50' />
-                    <div className='space-50' />
+                    <div className="space-50" />
+                    <div className="space-50" />
 
                     <ul className="experience-container">
                         <li className="experience-item">
                             <h3>HTML - 95%</h3>
-                            <input type='range' value='95' onChange={() => { }} />
+                            <input type="range" value="95" onChange={() => { }} />
                         </li>
                         <li className="experience-item">
                             <h3>CSS - 93%</h3>
-                            <input type='range' value='93' onChange={() => { }} />
+                            <input type="range" value="93" onChange={() => { }} />
                         </li>
                         <li className="experience-item">
                             <h3>JavaScript - 90%</h3>
-                            <input type='range' value='90' onChange={() => { }} />
+                            <input type="range" value="90" onChange={() => { }} />
                         </li>
                         <li className="experience-item">
                             <h3>React - 90%</h3>
-                            <input type='range' value='90' onChange={() => { }} />
+                            <input type="range" value="90" onChange={() => { }} />
                         </li>
                     </ul>
                     {/* <p>
@@ -93,7 +93,7 @@ const Profile = () => {
 
                 <section>
                     <h1 className="text-align-center">My <span className="primary-color">Works</span></h1>
-                    <div className='space-50' />
+                    <div className="space-50" />
                     <ul className="my-works-container">
                         <li className="my-work-item">
                             <div className="my-work-img" />
