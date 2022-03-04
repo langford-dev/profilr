@@ -1,0 +1,133 @@
+import React from "react";
+import { Create, Download, Github, Linkedin, Share, Twitter } from "../assets/icons";
+
+const Profile = () => {
+
+    return <div>
+        <main>
+            <div className="main-wrapper">
+                <div className="fab-container">
+                    <div className="fab-btn"><Share /></div>
+                    <div className="fab-btn"><Create /></div>
+                    <div className="fab-btn"><Download /></div>
+                </div>
+
+                <section className="flex flex-center hero flex-column first-section">
+                    <img src='https://media-exp1.licdn.com/dms/image/C5603AQFib7yWCC077A/profile-displayphoto-shrink_200_200/0/1641422561353?e=1647475200&v=beta&t=umrbde7zsRfwyGF6-DX4SPBoLBvD-hEnI6pdnTroMpo' className="avatar-lg" />
+                    <div className="space-50" />
+                    <div className="flex-column">
+                        <h1>Hey, 👋 I'm Langford Kwabena</h1>
+                        <div className="space-10" />
+                        <p className="subtext">Web developer</p>
+                    </div>
+
+                    <div className="space-20" />
+
+                    <div className="flex">
+                        <Github />
+                        <div className="space-20" />
+                        <Linkedin />
+                        <div className="space-20" />
+                        <Twitter />
+                    </div>
+                </section>
+
+
+                {/* <div className="space-50" /> */}
+                {/* <div className="line" /> */}
+                {/* <div className="space-50" /> */}
+
+                <section>
+                    <h1 className="text-align-center">About <span className="primary-color">Me</span></h1>
+                    <div className='space-50' />
+                    <p>
+                        Hello 👋 I’m Langford. A self-taught Web(3) & Software developer, Content creator and Technical Writer ✍️
+
+                        I have over 3+ years of industry experience.
+
+                        I enjoy learning new technologies and writing about what I discover 💛
+
+                        My favorite languages are JavaScript, HTML and CSS. I am well-versed in frameworks such as React, Vue.js, React Native, Flutter
+                    </p>
+                </section>
+
+
+                {/* <div className="space-50" /> */}
+                <div className="line" />
+                {/* <div className="space-50" /> */}
+
+                <section>
+                    <h1 className="text-align-center">My <span className="primary-color">Experience</span> </h1>
+                    <div className='space-50' />
+                    <div className='space-50' />
+
+                    <ul className="experience-container">
+                        <li className="experience-item">
+                            <h3>HTML - 95%</h3>
+                            <input type='range' value='95' onChange={() => { }} />
+                        </li>
+                        <li className="experience-item">
+                            <h3>CSS - 93%</h3>
+                            <input type='range' value='93' onChange={() => { }} />
+                        </li>
+                        <li className="experience-item">
+                            <h3>JavaScript - 90%</h3>
+                            <input type='range' value='90' onChange={() => { }} />
+                        </li>
+                        <li className="experience-item">
+                            <h3>React - 90%</h3>
+                            <input type='range' value='90' onChange={() => { }} />
+                        </li>
+                    </ul>
+                    {/* <p>
+                    Langford Kwabena Web developer About me Langford Kwabena Web developer About me Langford Kwabena Web developer About me Langford Kwabena Web developer About me Langford Kwabena Web developer About me
+                </p> */}
+                </section>
+
+
+                {/* <div className="space-50" /> */}
+                <div className="line" />
+                {/* <div className="space-50" /> */}
+
+                <section>
+                    <h1 className="text-align-center">My <span className="primary-color">Works</span></h1>
+                    <div className='space-50' />
+                    <ul className="my-works-container">
+                        <li className="my-work-item">
+                            <div className="my-work-img" />
+                            <div className="space-20" />
+                            <a href="/">google.com</a>
+                            <p>Description</p>
+                        </li>
+                        <li className="my-work-item">
+                            <div className="my-work-img" />
+                            <div className="space-20" />
+                            <a href="/">google.com</a>
+                            <p>Description</p>
+                        </li>
+                        <li className="my-work-item">
+                            <div className="my-work-img" />
+                            <div className="space-20" />
+                            <a href="/">google.com</a>
+                            <p>Description</p>
+                        </li>
+                        <li className="my-work-item">
+                            <div className="my-work-img" />
+                            <div className="space-20" />
+                            <a href="/">google.com</a>
+                            <p>Description</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <footer className="text-align-center">
+                Profilr • &copy;2022 All Rights Reserved • Made with 💛
+            </footer>
+
+            {/* <span className="fade-name">Langford</span> */}
+        </main>
+    </div>
+}
+
+export default Profile
