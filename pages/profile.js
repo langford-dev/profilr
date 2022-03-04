@@ -34,11 +34,6 @@ const Profile = () => {
                     </div>
                 </section>
 
-
-                {/* <div className="space-50" /> */}
-                {/* <div className="line" /> */}
-                {/* <div className="space-50" /> */}
-
                 <section>
                     <h1 className="text-align-center">About <span className="primary-color">Me</span></h1>
                     <div className="space-50" />
@@ -53,10 +48,7 @@ const Profile = () => {
                     </p>
                 </section>
 
-
-                {/* <div className="space-50" /> */}
                 <div className="line" />
-                {/* <div className="space-50" /> */}
 
                 <section>
                     <h1 className="text-align-center">My <span className="primary-color">Experience</span> </h1>
@@ -81,15 +73,9 @@ const Profile = () => {
                             <input type="range" value="90" onChange={() => { }} />
                         </li>
                     </ul>
-                    {/* <p>
-                    Langford Kwabena Web developer About me Langford Kwabena Web developer About me Langford Kwabena Web developer About me Langford Kwabena Web developer About me Langford Kwabena Web developer About me
-                </p> */}
                 </section>
 
-
-                {/* <div className="space-50" /> */}
                 <div className="line" />
-                {/* <div className="space-50" /> */}
 
                 <section>
                     <h1 className="text-align-center">My <span className="primary-color">Works</span></h1>
@@ -126,8 +112,6 @@ const Profile = () => {
             <footer className="text-align-center">
                 Profilr • &copy;2022 All Rights Reserved • Made with 💛
             </footer>
-
-            {/* <span className="fade-name">Langford</span> */}
         </main>
     </div>
 }
