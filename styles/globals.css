@@ -214,16 +214,17 @@ footer {
     /* font-size: 50px; */
   }
 
-  *, .text-align-center {
+  /* *, .text-align-center {
     text-align: left;
-  }
+  } */
 
   .experience-container li {
     width: 100%;
     background: #0d0d0d;
     padding: 14px;
-    border-radius: 3px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    /* margin-bottom: 10px; */
+    text-align: center;
   }
 
   .my-work-item {
