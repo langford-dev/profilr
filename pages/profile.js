@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { Create, Download, Github, Linkedin, Share, Twitter } from "../assets/icons";
 
@@ -13,7 +14,7 @@ const Profile = () => {
                 </div>
 
                 <section className="flex flex-center hero flex-column first-section">
-                    <img src='https://media-exp1.licdn.com/dms/image/C5603AQFib7yWCC077A/profile-displayphoto-shrink_200_200/0/1641422561353?e=1647475200&v=beta&t=umrbde7zsRfwyGF6-DX4SPBoLBvD-hEnI6pdnTroMpo' className="avatar-lg" />
+                    <Image src='https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg' alt='langford avatar' className="avatar-lg" />
                     <div className="space-50" />
                     <div className="flex-column">
                         <h1>Hey, 👋 I'm Langford Kwabena</h1>
@@ -96,25 +97,25 @@ const Profile = () => {
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <a href="/">google.com</a>
+                            <Link href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <a href="/">google.com</a>
+                            <Link href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <a href="/">google.com</a>
+                            <Link href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <a href="/">google.com</a>
+                            <Link href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                     </ul>
