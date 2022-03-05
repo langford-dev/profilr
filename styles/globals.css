@@ -1,18 +1,19 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); */
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inconsolata, monospace;
+  font-family: "Poppins";
+  /* font-family: Inconsolata, monospace; */
   /* font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
   /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   /* background: var(--bg-color); */
   /* background: linear-gradient(to bottom, #ffffff, #f6f6f6); */
   background: var(--bg-color);
   color: var(--text-color);
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 :root {
@@ -108,16 +109,6 @@ header {
 
 .app-header-wrapper .logo {
   margin-right: 180px;
-}
-
-.active-nav {
-  background: var(--svg-bg);
-  border-radius: 10px;
-  width: min-content;
-}
-
-.active-nav a {
-  color: var(--invert-text-color);
 }
 
 header nav a {
@@ -401,15 +392,21 @@ footer {
 .side-nav-wrapper {
   /* background: #000; */
   width: 100%;
-  height: 90%;
-  position: absolute;
+  height: 100%;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
+
+  padding: 30px 0;
+}
+
+.flex-column-between,
+.side-nav-wrapper {
   display: flex;
   align-items: center;
-  /* justify-content: spasce-evenly; */
+  justify-content: space-between;
   flex-direction: column;
-  padding: 15px;
+  /* background: red; */
 }
 
 .side-nav svg {
@@ -427,6 +424,7 @@ footer {
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
+  user-select: none;
   justify-content: flex-start;
 }
 
@@ -435,6 +433,28 @@ footer {
   width: 23px;
   height: 23px;
 }
+
+.active-side-nav-btn {
+  background: var(--accent-color)
+}
+
+.active-side-nav-btn p {
+  /* color: var(--invert-text-color); */
+}
+
+.active-side-nav-btn svg {
+  fill: var(--svg-bg)
+}
+
+/* .active-nav {
+  background: var(--svg-bg);
+  border-radius: 10px;
+  width: min-content;
+}
+
+.active-nav a {
+  color: var(--invert-text-color);
+} */
 
 .app-main {
   background: var(--grey-bg-color);

@@ -1,7 +1,7 @@
 import React from 'react'
 import AppSideNav from '../components/appSideNav'
 
-const AppHome = () => {
+const Settings = () => {
     return <div>
         <div className='app-main'>
             <AppSideNav />
@@ -12,4 +12,4 @@ const AppHome = () => {
     </div>
 }
 
-export default AppHome 
+export default Settings 
