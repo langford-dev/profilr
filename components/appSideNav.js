@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { AnalyticsIcon, BellIcon, CompassIcon, Create, HomeIcon, ProfileIcon, SettingsIcon, ShieldIcon } from "../assets/icons";
 import { ThemeToggle } from "./themeToggle";
 import { useRouter } from 'next/router'
+import Image from "next/image";
 
 const AppSideNav = () => {
     const router = useRouter()
@@ -22,7 +23,9 @@ const AppSideNav = () => {
 
     return <div className='side-nav'>
         <div className='side-nav-wrapper'>
-            <h3>Profilr</h3>
+            {/* <h3>Profilr</h3> */}
+
+            <Image src='https://res.cloudinary.com/nimmble/image/upload/v1646519116/gdf-removebg-preview_1_or91ud.png' width="90px" height="75px" />
 
             <div>
                 <Link href="/">

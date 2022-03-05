@@ -15,11 +15,12 @@ const Create = () => {
                         <h1>Pick a username?</h1>
                         <div className='space-50' />
                         <div className='flex'>
-                            <p>profilr.com/ </p> &nbsp; &nbsp; <input type='text' placeholder='Langford Musk' />
+                            <p>profilr.com/ </p> &nbsp; &nbsp; <input type='text' placeholder='langford' />
                         </div>
                     </div>
                 </div>
                 break;
+
             case 1:
                 return <div>
                     <div>
@@ -29,6 +30,7 @@ const Create = () => {
                     </div>
                 </div>
                 break;
+
             case 2:
                 return <div>
                     <div>
@@ -38,6 +40,7 @@ const Create = () => {
                     </div>
                 </div>
                 break;
+
             case 3:
                 return <div>
                     <div>
@@ -47,6 +50,7 @@ const Create = () => {
                     </div>
                 </div>
                 break;
+
             case 4:
                 return <h1>3</h1>
                 break;

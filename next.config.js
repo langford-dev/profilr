@@ -5,7 +5,7 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['pbs.twimg.com'],
+    domains: ['pbs.twimg.com', 'res.cloudinary.com'],
   },
 
   nextConfig

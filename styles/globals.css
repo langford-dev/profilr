@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 html,
 body {
@@ -60,7 +60,7 @@ a {
   padding: 0;
   margin: 0;
   line-height: 33px;
-  font-family: "Poppins";
+  font-family: "Inter";
   /* font-size: 20px; */
   outline: none;
   list-style: none;
@@ -429,7 +429,7 @@ footer {
 .side-nav-btn {
   display: flex;
   align-items: center;
-  background: var(--side-nav-btn-bg);
+  /* background: var(--side-nav-btn-bg); */
   /* background: var(--border-color); */
   padding: 10px 20px;
   width: 100%;
@@ -511,6 +511,7 @@ footer {
   padding-top: 90px;
   padding-bottom: 30px;
   border-bottom: 2px solid var(--border-color);
+  /* color: var(--primary-color); */
 }
 
 .app-view-content-wrapper {
@@ -540,6 +541,10 @@ input[type=text] {
   font-weight: 700;
   cursor: pointer;
   user-select: none;
+}
+
+.btn:hover {
+  opacity: .5;
 }
 
 .ghost-btn {
