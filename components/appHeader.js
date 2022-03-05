@@ -10,11 +10,11 @@ const AppHeader = () => {
                 <div className="logo"> Profilr </div>
 
                 <nav>
-                    <div className="active-nav"><Link href="#">Home</Link></div>
-                    <div><Link href="#about-me">Appearance</Link></div>
-                    <div> <Link href="#my-works">Settings</Link></div>
-                    <div> <Link href="#my-works">Analytics</Link></div>
-                    <div><Link href="#">Upgrade</Link></div>
+                    <div className="active-nav"><Link passHref={true} href="#">Home</Link></div>
+                    <div><Link passHref={true} href="#about-me">Appearance</Link></div>
+                    <div> <Link passHref={true} href="#my-works">Settings</Link></div>
+                    <div> <Link passHref={true} href="#my-works">Analytics</Link></div>
+                    <div><Link passHref={true} href="#">Upgrade</Link></div>
                 </nav>
             </div>
 

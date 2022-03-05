@@ -5,7 +5,7 @@ import PageTitle from '../components/pageTitle'
 
 const Create = () => {
     const [currentStep, setCurrentStep] = useState(0)
-    const maxSteps = 3
+    const maxSteps = 2
 
     const stepComponents = () => {
         switch (currentStep) {

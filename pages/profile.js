@@ -90,25 +90,25 @@ const Profile = () => {
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <Link href="/">google.com</Link>
+                            <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <Link href="/">google.com</Link>
+                            <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <Link href="/">google.com</Link>
+                            <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                         <li className="my-work-item">
                             <div className="my-work-img" />
                             <div className="space-20" />
-                            <Link href="/">google.com</Link>
+                            <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
                         </li>
                     </ul>

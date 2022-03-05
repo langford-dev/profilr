@@ -28,37 +28,37 @@ const AppSideNav = () => {
             <Image src='https://res.cloudinary.com/nimmble/image/upload/v1646519116/gdf-removebg-preview_1_or91ud.png' width="90px" height="75px" />
 
             <div>
-                <Link href="/">
+                <Link passHref={true} href="/">
                     <div className={currentRoute === "/" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <HomeIcon />
                         <p>Home</p>
                     </div>
                 </Link>
-                <Link href="/explore">
+                <Link passHref={true} href="/explore">
                     <div className={currentRoute === "/explore" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <CompassIcon />
                         <p>Explore</p>
                     </div>
                 </Link>
-                <Link href="/create">
+                <Link passHref={true} href="/create">
                     <div className={currentRoute === "/create" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <Create />
                         <p>Create New</p>
                     </div>
                 </Link>
-                <Link href="/upgrade">
+                <Link passHref={true} href="/upgrade">
                     <div className={currentRoute === "/upgrade" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <ShieldIcon />
                         <p>Upgrade</p>
                     </div>
                 </Link>
-                <Link href="/analytics">
+                <Link passHref={true} href="/analytics">
                     <div className={currentRoute === "/analytics" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <AnalyticsIcon />
                         <p>Analytics</p>
                     </div>
                 </Link>
-                <Link href="/settings">
+                <Link passHref={true} href="/settings">
                     <div className={currentRoute === "/settings" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <SettingsIcon />
                         <p>Settings</p>
