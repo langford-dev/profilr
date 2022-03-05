@@ -466,3 +466,22 @@ footer {
   width: 100%;
   padding: 30px;
 }
+
+.with-badge-container {
+  position: relative;
+}
+
+.badge-num {
+  background: red;
+  color: #fff;
+  width: min-content;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  padding: 6px;
+}

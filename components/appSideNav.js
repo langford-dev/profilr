@@ -43,12 +43,6 @@ const AppSideNav = () => {
                         <p>Create New</p>
                     </div>
                 </Link>
-                <Link href="/settings">
-                    <div className={currentRoute === "/settings" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
-                        <SettingsIcon />
-                        <p>Settings</p>
-                    </div>
-                </Link>
                 <Link href="/upgrade">
                     <div className={currentRoute === "/upgrade" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <ShieldIcon />
@@ -61,10 +55,20 @@ const AppSideNav = () => {
                         <p>Analytics</p>
                     </div>
                 </Link>
+                <Link href="/settings">
+                    <div className={currentRoute === "/settings" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                        <SettingsIcon />
+                        <p>Settings</p>
+                    </div>
+                </Link>
             </div>
 
             <div className="flex-column-between">
-                <BellIcon />
+                <div className="with-badge-container">
+
+                    <div className="badge-num">9</div>
+                    <BellIcon />
+                </div>
                 <div className="space-50"></div>
                 <ProfileIcon />
                 <div className="space-50"></div>

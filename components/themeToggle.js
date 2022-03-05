@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { MoonIcon, SunIcon } from "../assets/icons";
-// import Toggle from "react-toggle";
-// import "react-toggle/style.css"
 
 export const ThemeToggle = () => {
     const [isDark, setIsDark] = useState(false);
@@ -28,7 +26,6 @@ export const ThemeToggle = () => {
         document.documentElement.setAttribute("data-theme", "light");
     };
 
-    // const storedTheme = 'dark';
     const storedTheme = appWindow && appWindow ? localStorage.getItem("theme") : "light";
 
     const prefersDark =
