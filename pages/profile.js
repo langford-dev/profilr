@@ -1,33 +1,18 @@
 import Link from "next/link";
 import React from "react";
-import { Create, Download, Github, Linkedin, MenuIcon, Share, Twitter } from "../assets/icons";
+import { Github, Linkedin, Twitter } from "../assets/icons";
 import Image from "next/image";
+import Header from "../components/header";
+import Fab from "../components/fab";
 
 const Profile = () => {
 
     return <div>
         <main>
             <div className="main-wrapper">
-                <header>
-                    <div className="header-wrapper">
-                        <div className="logo"> {`>langford.dev`} </div>
+                <Header />
 
-                        <nav>
-                            <Link href="#">Home</Link>
-                            <Link href="#about-me">About</Link>
-                            <Link href="#my-works">My works</Link>
-                            <Link href="#">Find me</Link>
-                        </nav>
-
-                        <div className="menu-icon"><MenuIcon /></div>
-                    </div>
-                </header>
-
-                <div className="fab-container">
-                    <div className="fab-btn"><Share /></div>
-                    <div className="fab-btn"><Create /></div>
-                    <div className="fab-btn"><Download /></div>
-                </div>
+                <Fab />
 
                 <section className="flex flex-center hero flex-column first-section">
                     <Image width="200px" height="200px" src="https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg" alt="langford avatar" className="avatar-lg" />
@@ -41,11 +26,17 @@ const Profile = () => {
                     <div className="space-20" />
 
                     <div className="flex">
-                        <Link className="icon-link" href="https://github.com/langfordquarshie21"><Github /></Link>
+                        {/* <div className="icon-link" href="https://github.com/langfordquarshie21"> */}
+                        <Github />
+                        {/* </div> */}
                         <div className="space-30" />
-                        <Link className="icon-link" href="https://www.linkedin.com/in/langford-dev/"><Linkedin /></Link>
+                        {/* <div className="icon-link" href="https://www.linkedin.com/in/langford-dev/"> */}
+                        <Linkedin />
+                        {/* </div> */}
                         <div className="space-30" />
-                        <Link className="icon-link" href="https://twitter.com/langford_dev"><Twitter /></Link>
+                        {/* <div className="icon-link" href="https://twitter.com/langford_dev"> */}
+                        <Twitter />
+                        {/* </div> */}
                     </div>
                 </section>
 
