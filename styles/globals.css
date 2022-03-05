@@ -5,7 +5,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins";
   /* font-family: Inconsolata, monospace; */
   /* font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
   /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
@@ -18,7 +17,7 @@ body {
 
 :root {
   --bg-color: #fff;
-  --grey-bg-color: #F5F6F8;
+  --grey-bg-color: #f9f9f991;
   --section-bg: #f1f1f159;
   --text-color: #000;
   --first-section-bg: #fff;
@@ -61,7 +60,9 @@ a {
   padding: 0;
   margin: 0;
   line-height: 33px;
+  font-family: "Poppins";
   /* font-size: 20px; */
+  outline: none;
   list-style: none;
   scroll-behavior: smooth;
 }
@@ -316,6 +317,10 @@ footer {
   color: #0000000d;
 }
 
+.fade-text {
+  opacity: .6
+}
+
 @media screen and (max-width:480px) {
 
   .theme-toggle {
@@ -469,7 +474,7 @@ footer {
 } */
 
 .app-main {
-  background: var(--grey-bg-color);
+  /* background: var(--grey-bg-color); */
   display: flex;
 }
 
@@ -506,4 +511,38 @@ footer {
   padding-top: 90px;
   padding-bottom: 30px;
   border-bottom: 2px solid var(--border-color);
+}
+
+.app-view-content-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 100px;
+  /* background: #000; */
+}
+
+input[type=text] {
+  width: 100%;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 20px;
+  max-width: 700px;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ghost-btn {
+  background: transparent;
+  color: var(--text-color);
 }

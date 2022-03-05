@@ -1,16 +1,16 @@
 import React from 'react'
 import AppSideNav from '../components/appSideNav'
+import PageTitle from '../components/pageTitle'
 
 const Analytics = () => {
     return <div>
         <div className='app-main'>
             <AppSideNav />
             <div className='app-view'>
-                <div className='page-title'>
-                    <h1>Analytics</h1>
-                </div>
+                <PageTitle title='Analytics' />
 
                 <div className='app-view-content'>
+
 
 
                 </div>

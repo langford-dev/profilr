@@ -1,5 +1,6 @@
 import React from 'react'
 import AppSideNav from '../components/appSideNav'
+import PageTitle from '../components/pageTitle'
 
 const Settings = () => {
     return <div>
@@ -7,9 +8,7 @@ const Settings = () => {
             <div className='app-main'>
                 <AppSideNav />
                 <div className='app-view'>
-                    <div className='page-title'>
-                        <h1>Settings {`&`} preferences</h1>
-                    </div>
+                    <PageTitle title='Settings &amp; preferences' />
 
                     <div className='app-view-content'>
 

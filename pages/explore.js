@@ -1,14 +1,13 @@
 import React from 'react'
 import AppSideNav from '../components/appSideNav'
+import PageTitle from '../components/pageTitle'
 
 const Explore = () => {
     return <div>
         <div className='app-main'>
             <AppSideNav />
             <div className='app-view'>
-                <div className='page-title'>
-                    <h1>Explore</h1>
-                </div>
+                <PageTitle title='Explore' />
 
                 <div className='app-view-content'>
 
