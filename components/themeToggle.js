@@ -10,21 +10,26 @@ export const ThemeToggle = () => {
     useEffect(() => {
         setAppWindow(window)
 
-        setDark();
-        setIsDark(true)
+        if (defaultDark) {
+            setDark();
+            setIsDark(true)
+        }
 
         return () => { }
     }, [appWindow])
 
     const setDark = () => {
+        appWindow && appWindow ? localStorage.setItem("theme", "dark") : null;
         document.documentElement.setAttribute("data-theme", "dark");
     };
 
     const setLight = () => {
+        appWindow && appWindow ? localStorage.setItem("theme", "light") : null;
         document.documentElement.setAttribute("data-theme", "light");
     };
 
-    const storedTheme = 'dark';
+    // const storedTheme = 'dark';
+    const storedTheme = appWindow && appWindow ? localStorage.getItem("theme") : "light";
 
     const prefersDark =
 
