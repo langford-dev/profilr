@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Github, Linkedin, Twitter } from "../assets/icons";
 import Image from "next/image";
-import Header from "../components/header";
+import ProfileHeader from "../components/profileHeader";
 import Fab from "../components/fab";
 
 const Profile = () => {
@@ -10,7 +10,7 @@ const Profile = () => {
     return <div>
         <main>
             <div className="main-wrapper">
-                <Header />
+                <ProfileHeader />
 
                 <Fab />
 

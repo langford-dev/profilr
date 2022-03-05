@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ThemeToggle } from "./themeToggle";
 import { MenuIcon } from "../assets/icons";
 
-const Header = () => {
+const ProfileHeader = () => {
     return <header>
         <div className="header-wrapper">
             <div className="logo"> {`>langford.dev`} </div>
@@ -16,9 +16,9 @@ const Header = () => {
             </nav>
 
             <div className="theme-toggle"> <ThemeToggle /></div>
-            <div className="menu-icon"><MenuIcon /></div>
+            <div className="hide-desktop"><MenuIcon /></div>
         </div>
     </header>
 }
 
-export default Header
+export default ProfileHeader
