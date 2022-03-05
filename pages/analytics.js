@@ -1,13 +1,13 @@
 import React from 'react'
 import AppSideNav from '../components/appSideNav'
 
-const AppHome = () => {
+const Analytics = () => {
     return <div>
         <div className='app-main'>
             <AppSideNav />
             <div className='app-view'>
                 <div className='page-title'>
-                    <h1>Welcome Jeff 👋</h1>
+                    <h1>Analytics</h1>
                 </div>
 
                 <div className='app-view-content'>
@@ -19,4 +19,4 @@ const AppHome = () => {
     </div>
 }
 
-export default AppHome 
+export default Analytics 

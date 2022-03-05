@@ -6,7 +6,14 @@ const Create = () => {
         <div className='app-main'>
             <AppSideNav />
             <div className='app-view'>
-                <h1>Welcome Jeff 👋</h1>
+                <div className='page-title'>
+                    <h1>Create new profile</h1>
+                </div>
+
+                <div className='app-view-content'>
+
+
+                </div>
             </div>
         </div>
     </div>

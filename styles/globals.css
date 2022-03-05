@@ -29,6 +29,9 @@ body {
   --line-bg: #f1f1f1;
   --svg-bg: #000;
   --invert-text-color: #fff;
+  --page-title-bg: #fff;
+  --side-nav-btn-bg: #f1f1f1;
+  --side-nav-btn-hover-bg: var(--border-color);
 }
 
 [data-theme='dark'] {
@@ -42,6 +45,9 @@ body {
   --border-color: #fff9f905;
   --grey-bg-color: #fff9f905;
   --invert-text-color: #000;
+  --page-title-bg: #111;
+  --side-nav-btn-bg: var(--border-color);
+  --side-nav-btn-hover-bg: #1d1d1d;
 }
 
 a {
@@ -418,14 +424,20 @@ footer {
 .side-nav-btn {
   display: flex;
   align-items: center;
-  background: var(--border-color);
+  background: var(--side-nav-btn-bg);
+  /* background: var(--border-color); */
   padding: 10px 20px;
   width: 100%;
   margin-bottom: 20px;
   border-radius: 10px;
+  transition: .2s linear;
   cursor: pointer;
   user-select: none;
   justify-content: flex-start;
+}
+
+.side-nav-btn:hover {
+  background: var(--side-nav-btn-hover-bg);
 }
 
 .side-nav-btn svg {
@@ -462,8 +474,10 @@ footer {
 }
 
 .app-view {
-  /* background: #000; */
   width: 100%;
+}
+
+.app-view-content {
   padding: 30px;
 }
 
@@ -484,4 +498,12 @@ footer {
   right: -6px;
   top: -6px;
   padding: 6px;
+}
+
+.page-title {
+  background: var(--page-title-bg);
+  padding: 50px;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--border-color);
 }

@@ -3,10 +3,19 @@ import AppSideNav from '../components/appSideNav'
 
 const Settings = () => {
     return <div>
-        <div className='app-main'>
-            <AppSideNav />
-            <div className='app-view'>
-                <h1>Welcome Jeff 👋</h1>
+        <div>
+            <div className='app-main'>
+                <AppSideNav />
+                <div className='app-view'>
+                    <div className='page-title'>
+                        <h1>Settings {`&`} preferences</h1>
+                    </div>
+
+                    <div className='app-view-content'>
+
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
