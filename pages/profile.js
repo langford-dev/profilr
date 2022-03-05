@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Create, Download, Github, Linkedin, Share, Twitter } from "../assets/icons";
+import { Create, Download, Github, Linkedin, MenuIcon, Share, Twitter } from "../assets/icons";
 import Image from "next/image";
 
 const Profile = () => {
@@ -8,6 +8,21 @@ const Profile = () => {
     return <div>
         <main>
             <div className="main-wrapper">
+                <header>
+                    <div className="header-wrapper">
+                        <div className="logo"> {`>langford.dev`} </div>
+
+                        <nav>
+                            <Link href="#">Home</Link>
+                            <Link href="#about-me">About</Link>
+                            <Link href="#my-works">My works</Link>
+                            <Link href="#">Find me</Link>
+                        </nav>
+
+                        <div className="menu-icon"><MenuIcon /></div>
+                    </div>
+                </header>
+
                 <div className="fab-container">
                     <div className="fab-btn"><Share /></div>
                     <div className="fab-btn"><Create /></div>
@@ -26,15 +41,15 @@ const Profile = () => {
                     <div className="space-20" />
 
                     <div className="flex">
-                        <Github />
-                        <div className="space-20" />
-                        <Linkedin />
-                        <div className="space-20" />
-                        <Twitter />
+                        <Link className="icon-link" href="https://github.com/langfordquarshie21"><Github /></Link>
+                        <div className="space-30" />
+                        <Link className="icon-link" href="https://www.linkedin.com/in/langford-dev/"><Linkedin /></Link>
+                        <div className="space-30" />
+                        <Link className="icon-link" href="https://twitter.com/langford_dev"><Twitter /></Link>
                     </div>
                 </section>
 
-                <section>
+                <section id="about-me">
                     <h1 className="text-align-center">About <span className="primary-color">Me</span></h1>
                     <div className="space-50" />
                     <p>
@@ -50,7 +65,7 @@ const Profile = () => {
 
                 <div className="line" />
 
-                <section>
+                <section id="my-experience">
                     <h1 className="text-align-center">My <span className="primary-color">Experience</span> </h1>
                     <div className="space-50" />
                     <div className="space-50" />
@@ -77,7 +92,7 @@ const Profile = () => {
 
                 <div className="line" />
 
-                <section>
+                <section id="my-works">
                     <h1 className="text-align-center">My <span className="primary-color">Works</span></h1>
                     <div className="space-50" />
                     <ul className="my-works-container">
