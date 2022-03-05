@@ -10,10 +10,8 @@ export const ThemeToggle = () => {
     useEffect(() => {
         setAppWindow(window)
 
-        if (defaultDark) {
-            setDark();
-            setIsDark(true)
-        }
+        setDark();
+        setIsDark(true)
 
         return () => { }
     }, [appWindow])
@@ -52,7 +50,6 @@ export const ThemeToggle = () => {
                     : <div onClick={() => toggleTheme(false)}><SunIcon /></div>
 
             }
-            <label for="switch" class="toggle"></label>
         </div>
     );
 };
