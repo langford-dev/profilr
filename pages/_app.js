@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import ProfilrContext from "../context/appContext";
 import { useState, useEffect } from "react";
+import '../styles/style-1.css'
 
 function MyApp({ Component, pageProps }) {
   const [appWindow, setAppWindow] = useState();
