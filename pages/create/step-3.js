@@ -25,7 +25,7 @@ const Step3 = () => {
 
                         <div>
                             <div className='flex'>
-                                <Link href='/create/step-2'><div className='btn ghost-btn'>&larr; &nbsp; Previous</div></Link>
+                                <Link passHref={true} href='/create/step-2'><div className='btn ghost-btn'>&larr; &nbsp; Previous</div></Link>
                                 <div className="btn">Done</div>
                             </div>
                             <div className='space-50' />
