@@ -1,7 +1,7 @@
 .template-main-view {
-    height: 100vh;
+    /* height: 100vh;
     width: 100vw;
-    overflow-y: scroll;
+    overflow-y: scroll; */
     background: #FFF8E0;
     /* background: var(--grey-bg-color) */
 }
