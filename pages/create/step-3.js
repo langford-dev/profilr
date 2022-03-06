@@ -26,7 +26,8 @@ const Step3 = () => {
                         <div>
                             <div className='flex'>
                                 <Link passHref={true} href='/create/step-2'><div className='btn ghost-btn'>&larr; &nbsp; Previous</div></Link>
-                                <div className="btn">Done</div>
+                                <Link passHref={true} href='/preview'><div className='btn'>Go to preview &nbsp; &rarr;</div></Link>
+                                {/* <div className="btn">Done</div> */}
                             </div>
                             <div className='space-50' />
                             <p className='fade-text'>This information will be displayed on your portfolio site</p>

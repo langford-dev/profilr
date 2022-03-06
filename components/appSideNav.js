@@ -41,7 +41,7 @@ const AppSideNav = () => {
                     </div>
                 </Link>
                 <Link passHref={true} href="/create/home">
-                    <div className={currentRoute === "/create/home" || currentRoute === "/create/step-1" || currentRoute === "/create/step-2" || currentRoute === "/create/step-3" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                    <div className={currentRoute === "/create/home" || currentRoute === "/create/step-1" || currentRoute === "/create/step-2" || currentRoute === "/create/step-3" || currentRoute === '/preview' ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <Create />
                         <p>Create New</p>
                     </div>
