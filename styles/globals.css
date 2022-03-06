@@ -179,6 +179,7 @@ main {
   border-radius: 1000px;
   -o-object-fit: cover;
   object-fit: cover;
+  /* border: 3px solid #ffc10773 */
   /* border: 3px solid var(--accent-color); */
 }
 

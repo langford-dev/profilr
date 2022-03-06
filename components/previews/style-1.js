@@ -22,7 +22,12 @@ const Style1 = (props) => {
             <section>
                 <h1 className="template-section-title">About me</h1>
                 <div className="space-30" />
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                <p>
+                    Hello 👋 I’m Langford. A self-taught Web(3) and Software developer, Content creator and Technical Writer ✍️
+                    I have over 3+ years of industry experience.
+                    I enjoy learning new technologies and writing about what I discover 💛
+                    My favorite languages are JavaScript, HTML and CSS. I am well-versed in frameworks such as React, Vue.js, React Native, Flutter
+                </p>
             </section>
 
             <section>
