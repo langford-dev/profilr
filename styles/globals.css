@@ -321,68 +321,6 @@ footer {
   opacity: .6
 }
 
-@media screen and (max-width:480px) {
-
-  .theme-toggle {
-    order: -1
-  }
-
-  .header-wrapper svg {
-    position: relative;
-    top: 6px;
-  }
-
-  .experience-container li {
-    width: 100%;
-    background: var(--border-color);
-    padding: 14px;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  .first-section {
-    padding-top: 100px;
-  }
-
-  header nav {
-    display: none;
-  }
-
-  .hide-desktop {
-    display: block;
-  }
-
-  .my-work-item {
-    width: 100%
-  }
-
-  footer {
-    padding: 20px
-  }
-
-  section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .fab-container {
-    display: none;
-  }
-
-  h1 {
-    line-height: 60px;
-  }
-
-  .main-wrapper {
-    width: 100vw
-  }
-
-  .hero h1,
-  .hero .subtext {
-    text-align: center;
-  }
-}
-
 
 
 
@@ -398,6 +336,7 @@ footer {
   position: relative;
   border: 2px solid var(--border-color);
   border-left: none;
+  position: fixed;
 }
 
 .side-nav-wrapper {
@@ -480,6 +419,7 @@ footer {
 
 .app-view {
   width: 100%;
+  margin-left: 296px;
 }
 
 .app-view-content {
@@ -556,4 +496,83 @@ input[type=text]:focus {
 .ghost-btn {
   background: transparent;
   color: var(--text-color);
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+  .side-nav {
+    display: none;
+  }
+
+  .app-view {
+    margin-left: 0;
+  }
+
+  .page-title {
+    padding: 20px
+  }
+}
+
+@media screen and (max-width:480px) {
+  .theme-toggle {
+    order: -1
+  }
+
+  .header-wrapper svg {
+    position: relative;
+    top: 6px;
+  }
+
+  .experience-container li {
+    width: 100%;
+    background: var(--border-color);
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .first-section {
+    padding-top: 100px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .my-work-item {
+    width: 100%
+  }
+
+  footer {
+    padding: 20px
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fab-container {
+    display: none;
+  }
+
+  h1 {
+    line-height: 60px;
+  }
+
+  .main-wrapper {
+    width: 100vw
+  }
+
+  .hero h1,
+  .hero .subtext {
+    text-align: center;
+  }
 }

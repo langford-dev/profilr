@@ -19,6 +19,32 @@ const Create = () => {
                             <div className='space-50' />
                             <Link passHref={true} href="/create/step-1"><div className='btn'>Lets go! &rarr;</div></Link>
                         </div>
+
+                        {/* <div>
+                            <h1>Pick a username?</h1>
+                            <div className='space-50' />
+                            <div className='flex'>
+                                <p>profilr.com/ </p> &nbsp; &nbsp; <input type='text' placeholder='langford' />
+                            </div>
+                        </div>
+
+                        <div className='space-50' />
+                        <div className='space-50' />
+
+                        <div>
+                            <h1>What is your name?</h1>
+                            <div className='space-50' />
+                            <input type='text' placeholder='Langford Musk' />
+                        </div>
+
+                        <div className='space-50' />
+                        <div className='space-50' />
+
+                        <div>
+                            <h1>Pick your theme color</h1>
+                            <div className='space-50' />
+                            <input type='color' />
+                        </div> */}
                     </div>
                 </div>
             </div>
