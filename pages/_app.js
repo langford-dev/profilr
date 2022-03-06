@@ -12,11 +12,15 @@ function MyApp({ Component, pageProps }) {
     return () => { }
   }, [appWindow])
 
+  const formatUsername = (str) => {
+    return str.trim().replace(/[&\/\\#{},}+(-=)*&^%$#!@)$~%.'"|^:*?<>{}]/g, '').trim()
+  }
 
   return (
     <ProfilrContext.Provider
       value={{
-        appWindow
+        appWindow,
+        formatUsername
       }}>
       <Component {...pageProps} />
     </ProfilrContext.Provider>

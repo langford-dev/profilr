@@ -3,10 +3,9 @@ import React, { useState, useContext } from "react";
 import AppSideNav from "../../components/appSideNav";
 import PageTitle from "../../components/pageTitle";
 import ProfilrContext from "../../context/appContext";
-// import { ProfilrContext } from "../../context/Profilr.context";
 
 const Step1 = () => {
-    const { appWindow } = useContext(ProfilrContext);
+    const { appWindow, formatUsername } = useContext(ProfilrContext);
     const [username, setUsername] = useState('')
 
     setTimeout(() => {
@@ -22,9 +21,8 @@ const Step1 = () => {
 
     const setUsernameValues = (val) => {
 
-        setUsername(val)
-
         if (appWindow && appWindow) {
+            setUsername(formatUsername(val))
             appWindow.sessionStorage.setItem('step-username', val)
         }
     }
@@ -40,7 +38,7 @@ const Step1 = () => {
                     <div className='app-view-content-wrapper'>
 
                         <div className='step-container'>
-                            <h1>Pick a username?</h1>
+                            <h1>Pick a username </h1>
                             <div className='space-50' />
                             <div className='flex'>
                                 <p>profilr.com/ </p> &nbsp; &nbsp; <input value={username} onChange={e => setUsernameValues(e.target.value)} type='text' placeholder='langford' />
@@ -53,7 +51,10 @@ const Step1 = () => {
                         <div>
                             <div className='flex'>
                                 <Link passHref={true} href='/create/home'><div className='btn ghost-btn'>&larr; &nbsp; Cancel</div></Link>
-                                <Link passHref={true} href='/create/step-2'><div className='btn'>Next &nbsp; &rarr;</div></Link>
+
+                                {
+                                    username !== '' ? <Link passHref={true} href='/create/step-2'><div className='btn'>Next &nbsp; &rarr;</div></Link> : <></>
+                                }
                             </div>
                             <div className='space-50' />
                             <p className='fade-text'>This information will be displayed on your portfolio site</p>
