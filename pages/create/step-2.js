@@ -15,7 +15,7 @@ const Step2 = () => {
                 <div className='app-view-content'>
                     <div className='app-view-content-wrapper'>
 
-                        <div>
+                        <div className='step-container'>
                             <h1>What is your name?</h1>
                             <div className='space-50' />
                             <input type='text' placeholder='Langford Musk' />

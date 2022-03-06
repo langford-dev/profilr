@@ -15,7 +15,7 @@ const Step3 = () => {
                 <div className='app-view-content'>
                     <div className='app-view-content-wrapper'>
 
-                        <div>
+                        <div className='step-container'>
                             <h1>Pick your theme color</h1>
                             <div className='space-50' />
                             <input type='color' />

@@ -15,7 +15,7 @@ const Step1 = () => {
                 <div className='app-view-content'>
                     <div className='app-view-content-wrapper'>
 
-                        <div>
+                        <div className='step-container'>
                             <h1>Pick a username?</h1>
                             <div className='space-50' />
                             <div className='flex'>

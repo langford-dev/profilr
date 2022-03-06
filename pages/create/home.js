@@ -14,7 +14,7 @@ const Create = () => {
 
                 <div className='app-view-content'>
                     <div className='app-view-content-wrapper'>
-                        <div>
+                        <div className='step-container'>
                             <h1>Lets build your portfolio website</h1>
                             <div className='space-50' />
                             <Link passHref={true} href="/create/step-1"><div className='btn'>Lets go! &rarr;</div></Link>

@@ -482,7 +482,7 @@ input[type=text]:focus {
   background: var(--primary-color);
   color: #fff;
   border: none;
-  padding: 10px 30px;
+  padding: 4px 22px;
   border-radius: 10px;
   /* font-weight: 700; */
   cursor: pointer;
@@ -515,8 +515,17 @@ input[type=text]:focus {
   }
 
   .page-title {
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
+  }
+
+  .page-title h1 {
+    font-size: inherit;
+  }
+
+  .step-container h1 {
+    font-size: 2rem;
+    line-height: 50px;
   }
 
   h1 {
