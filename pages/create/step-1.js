@@ -1,9 +1,33 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState, useContext } from "react";
 import AppSideNav from "../../components/appSideNav";
 import PageTitle from "../../components/pageTitle";
+import ProfilrContext from "../../context/appContext";
+// import { ProfilrContext } from "../../context/Profilr.context";
 
 const Step1 = () => {
+    const { appWindow } = useContext(ProfilrContext);
+    const [username, setUsername] = useState('')
+
+    setTimeout(() => {
+
+        if (appWindow && appWindow) {
+
+            let usernameFromStorage = appWindow.sessionStorage.getItem('step-username')
+
+            if (usernameFromStorage && usernameFromStorage) setUsername(usernameFromStorage)
+        }
+
+    }, 10);
+
+    const setUsernameValues = (val) => {
+
+        setUsername(val)
+
+        if (appWindow && appWindow) {
+            appWindow.sessionStorage.setItem('step-username', val)
+        }
+    }
 
     return <div>
         <div className='app-main'>
@@ -19,7 +43,7 @@ const Step1 = () => {
                             <h1>Pick a username?</h1>
                             <div className='space-50' />
                             <div className='flex'>
-                                <p>profilr.com/ </p> &nbsp; &nbsp; <input type='text' placeholder='langford' />
+                                <p>profilr.com/ </p> &nbsp; &nbsp; <input value={username} onChange={e => setUsernameValues(e.target.value)} type='text' placeholder='langford' />
                             </div>
                         </div>
 

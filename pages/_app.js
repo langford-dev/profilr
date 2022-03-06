@@ -1,11 +1,25 @@
 import "../styles/globals.css";
-import { ProfilrProvider } from "../context/profilr.context";
+import ProfilrContext from "../context/appContext";
+import { useState, useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  const [appWindow, setAppWindow] = useState();
+
+  useEffect(() => {
+
+    setAppWindow(window)
+
+    return () => { }
+  }, [appWindow])
+
+
   return (
-    <ProfilrProvider>
+    <ProfilrContext.Provider
+      value={{
+        appWindow
+      }}>
       <Component {...pageProps} />
-    </ProfilrProvider>
+    </ProfilrContext.Provider>
   );
 }
 
