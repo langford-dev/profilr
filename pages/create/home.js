@@ -17,7 +17,7 @@ const Create = () => {
                         <div>
                             <h1>Lets build your portfolio website</h1>
                             <div className='space-50' />
-                            <Link passHref={true} href="/create/step-1"><div className='btn'>Let's go! &rarr;</div></Link>
+                            <Link passHref={true} href="/create/step-1"><div className='btn'>Lets go! &rarr;</div></Link>
                         </div>
                     </div>
                 </div>
