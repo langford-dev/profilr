@@ -541,6 +541,8 @@ input[type=text] {
   font-weight: 700;
   cursor: pointer;
   user-select: none;
+  width: min-content;
+  white-space: nowrap;
 }
 
 .btn:hover {
