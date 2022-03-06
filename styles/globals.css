@@ -69,6 +69,7 @@ a {
 
 h1 {
   font-size: 2rem;
+  font-weight: 500;
   /* color: var(--primary-color) */
   /* background: #000; */
 }
@@ -464,8 +465,9 @@ footer {
 input[type=text] {
   width: 100%;
   background: transparent;
-  border: 2px solid var(--border-color);
-  border-radius: 10px;
+  border: none;
+  border-bottom: 2px solid var(--border-color);
+  /* border-radius: 10px; */
   padding: 10px;
   color: var(--text-color);
   font-size: 20px;
@@ -482,7 +484,7 @@ input[type=text]:focus {
   border: none;
   padding: 10px 30px;
   border-radius: 10px;
-  font-weight: 700;
+  /* font-weight: 700; */
   cursor: pointer;
   user-select: none;
   width: min-content;
@@ -494,6 +496,7 @@ input[type=text]:focus {
 }
 
 .ghost-btn {
+  padding-left: 0;
   background: transparent;
   color: var(--text-color);
 }
@@ -512,7 +515,16 @@ input[type=text]:focus {
   }
 
   .page-title {
-    padding: 20px
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  input[type=text] {
+    font-size: inherit;
   }
 }
 
@@ -563,9 +575,9 @@ input[type=text]:focus {
     display: none;
   }
 
-  h1 {
+  /* h1 {
     line-height: 60px;
-  }
+  } */
 
   .main-wrapper {
     width: 100vw
