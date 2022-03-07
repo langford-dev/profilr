@@ -142,22 +142,18 @@ header {
   align-items: flex-start
 }
 
-.container textarea {
+/* .container textarea {
   width: 100%;
   border: none;
   height: 200px;
   resize: none;
   background: transparent;
   color: var(--text-colors)
-}
+} */
 
 .container input, .container textarea {
   /* margin-top: -20px; */
-  background: var(--input-bg);
-  border-radius: 10px;
-  padding: 0 10px;
-  font-size: inherit;
-  border: 2px solid var(--border-color);
+
 }
 
 .container-child {
@@ -530,20 +526,31 @@ footer {
   /* background: #000; */
 }
 
-input {
+input, textarea {
   width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid var(--border-color);
+  background: var(--input-bg);
+  /* border: none; */
+  /* border: 2px solid var(--border-color); */
   /* border-radius: 10px; */
-  padding: 10px;
+  /* padding: 10px; */
   color: var(--text-color);
-  font-size: 20px;
-  max-width: 600px;
+  /* font-size: 20px; */
+  /* max-width: 600px; */
+
+
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: inherit;
+  border: 2px solid var(--border-color);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   border-color: #ffc10733
+}
+
+textarea {
+  height: 200px
 }
 
 .btn {
@@ -573,7 +580,7 @@ input:focus {
   width: 100%
 }
 
-.preview-main textarea {
+/* .preview-main textarea {
   width: 100%;
   line-height: 22px;
   height: 311px;
@@ -585,7 +592,7 @@ input:focus {
   background: var(--bg-color);
   color: var(--text-color);
   resize: none;
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;
@@ -600,12 +607,23 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #00000070;
+  background: #000000ba;
+}
+
+.modal-close-btn {
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  color: var(--accent-color);
 }
 
 .modal-content {
   background: #fff;
   padding: 30px;
+  margin: 20px;
+  width: 100%;
+  max-width: 550px;
   border: 2px solid var(--border-color);
   border-radius: 20px;
 }

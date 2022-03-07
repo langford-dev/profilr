@@ -10,12 +10,32 @@ const Edit = () => {
     const [showAddWorkModal, setShowAddWorkModal] = useState(false)
 
     const AddWorkModal = () => {
-        // return <></>
-        if (showAddWorkModal) return <div className="modal" onClick={() => setShowAddWorkModal(false)}>
+        if (showAddWorkModal) return <div className="modal">
             <div className="modal-content">
-                <h2>Add your work</h2>
+                <div className="flex-between">
+                    <h2>Add your work</h2>
+                    <b className="modal-close-btn" onClick={() => setShowAddWorkModal(false)}>Close &times;</b>
+                </div>
+
+                <div className="space-20" />
+
+                <div>
+                    <b>Name of company</b>
+                    <input type='text' />
+                </div>
+
+                <div className="space-20" />
+
+                <div>
+                    <b>Description</b>
+                    <textarea type='text' placeholder="talk about how long youve worked there, as well as your role in thhe company" />
+                </div>
+
+                <div className="space-20" />
+
+                <Button label='Add work' />
             </div>
-        </div>
+        </div >
 
         return <></>
     }
