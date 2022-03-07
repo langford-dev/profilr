@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import AppSideNav from "../../components/appSideNav";
+import BottomNav from "../../components/bottomNav";
 import Button from "../../components/button";
 import PersonalInfoContainer from "../../components/edit/personalInfoContainer";
 import PageTitle from "../../components/pageTitle";
@@ -21,20 +22,21 @@ const Edit = () => {
 
     return <div className='app-main'>
         <AppSideNav />
-
+        <BottomNav />
         <AddWorkModal />
 
         <div className='app-view'>
+            <PageTitle title='Edit profile' />
             <div className='app-view-content'>
                 <div className='app-view-content-wrapper'>
 
-                    <div className="flex-between">
+                    {/* <div className="flex-between inner-page-title">
                         <h1>Edit your profile</h1>
-                        <div className="flex">
-                            <Button label='Save changes' />
-                            <div className="space-50" />
-                            <Link passHref={true} href='/account/preview'><div className="btn ghost-btn">Preview</div></Link>
-                        </div>
+                    </div> */}
+                    <div className="flex inner-page-title-btns">
+                        <Button label='Save changes' />
+                        <div className="space-50" />
+                        <Link passHref={true} href='/account/preview'><div className="btn ghost-btn">Preview</div></Link>
                     </div>
                     <div className="space-20" />
                     <p>These changes are public and will reflect in your profile page</p>
