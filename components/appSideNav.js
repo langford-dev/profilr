@@ -74,13 +74,12 @@ const AppSideNav = () => {
             </div>
 
             <div className="flex-column-between">
-                <div className="with-badge-container">
-
+                {/* <div className="with-badge-container">
                     <div className="badge-num">9</div>
                     <BellIcon />
                 </div>
                 <div className="space-50"></div>
-                <ProfileIcon />
+                <ProfileIcon /> */}
                 <div className="space-50"></div>
                 <ThemeToggle />
             </div>

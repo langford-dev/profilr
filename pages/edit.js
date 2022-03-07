@@ -30,7 +30,11 @@ const Edit = () => {
 
                     <div className="flex-between">
                         <h1>Edit your profile</h1>
-                        <Link href='/preview'><div className="btn">Preview</div></Link>
+                        <div className="flex">
+                            <Button label='Save changes' />
+                            <div className="space-50" />
+                            <Link href='/preview'><div className="btn ghost-btn">Preview</div></Link>
+                        </div>
                     </div>
                     <div className="space-20" />
                     <p>These changes are public and will reflect in your profile page</p>
