@@ -21,9 +21,9 @@
     max-width: 900px;
     margin: auto;
     text-align: center;
-    border-radius: 20px;
+    /* border-radius: 20px;
     border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-right-radius: 0; */
     border: 2px solid var(--border-color);
     background: #fff;
     /* background: #f6f6f6c7; */
@@ -40,6 +40,52 @@
 .template-section-title {
     font-size: 2rem;
     color: #3F51B5;
+}
+
+.template-tools ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.template-tools ul li {
+    border: 2px solid var(--border-color);
+    width: min-content;
+    padding: 0 10px;
+    margin: 10px;
+    white-space: nowrap;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.template-workplaces {}
+
+
+
+details {
+    margin-bottom: 20px;
+}
+
+summary {
+    /* margin: 10px 0; */
+    /* margin-top: 20px; */
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+}
+
+summary:hover {
+    background: var(--border-color);
+}
+
+summary p {
+    display: block;
+    margin-top: 20px;
+    background: #000;
 }
 
 @media screen and (max-width:768px) {

@@ -73,6 +73,49 @@ const Style1 = () => {
                 </ul>
             </section> */}
 
+            <section className="template-tools">
+                <h1 className="template-section-title">My tools</h1>
+                <div className="space-50" />
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Photoshop</li>
+                    <li>C#</li>
+                    <li>Adobe Illustrator</li>
+                    <li>MongoDB</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>C++</li>
+                </ul>
+            </section>
+
+            <section>
+                <div className="space-50" />
+                <div className="line" />
+                <div className="space-50" />
+            </section>
+
+            <section className="template-workplaces">
+                <h1 className="template-section-title">Places i've worked</h1>
+                <div className="space-50" />
+                <ul>
+                    <details open>
+                        <summary>Google Enterprise</summary>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </details>
+
+                    <details>
+                        <summary>Google Facebook</summary>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </details>
+
+                    <details>
+                        <summary>Instagram Facebook</summary>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </details>
+                </ul>
+            </section>
+
             <section>
                 <div className="space-50" />
                 <div className="line" />
@@ -111,7 +154,7 @@ const Style1 = () => {
             </section>
 
             <footer className="text-align-center">
-                Profilr • &copy;2022 All Rights Reserved • Made with 💛
+                Profilr • Made with 💛 • &copy;2022 All Rights Reserved
             </footer>
         </section>
     </section>
