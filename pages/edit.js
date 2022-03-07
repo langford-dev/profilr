@@ -33,7 +33,7 @@ const Edit = () => {
                         <div className="flex">
                             <Button label='Save changes' />
                             <div className="space-50" />
-                            <Link href='/preview'><div className="btn ghost-btn">Preview</div></Link>
+                            <Link passHref={true} href='/preview'><div className="btn ghost-btn">Preview</div></Link>
                         </div>
                     </div>
                     <div className="space-20" />

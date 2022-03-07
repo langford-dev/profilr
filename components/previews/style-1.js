@@ -96,7 +96,7 @@ const Style1 = () => {
             </section>
 
             <section className="template-workplaces">
-                <h1 className="template-section-title">Places i've worked</h1>
+                <h1 className="template-section-title">Places ive worked</h1>
                 <div className="space-50" />
                 <ul>
                     <details open>
