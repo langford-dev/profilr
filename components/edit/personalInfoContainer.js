@@ -12,6 +12,12 @@ const PersonalInfoContainer = () => {
         </div>
 
         <div>
+            <b>Your email</b>
+            <input type='email' />
+            <div className="space-50" />
+        </div>
+
+        <div>
             <b>Your work</b>
             <input type='text' />
             <div className="space-30" />

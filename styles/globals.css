@@ -151,7 +151,7 @@ header {
   color: var(--text-colors)
 }
 
-.container input[type=text], .container textarea {
+.container input, .container textarea {
   /* margin-top: -20px; */
   background: var(--input-bg);
   border-radius: 10px;
@@ -529,7 +529,7 @@ footer {
   /* background: #000; */
 }
 
-input[type=text] {
+input {
   width: 100%;
   background: transparent;
   border: none;
@@ -541,7 +541,7 @@ input[type=text] {
   max-width: 600px;
 }
 
-input[type=text]:focus {
+input:focus {
   border-color: #ffc10733
 }
 
@@ -641,7 +641,7 @@ input[type=text]:focus {
     padding: 20px
   }
 
-  .container input[type=text], .container textarea {
+  .container input, .container textarea {
     width: 73vw;
   }
 

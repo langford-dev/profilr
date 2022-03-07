@@ -55,7 +55,7 @@ const Edit = () => {
                             </div>
 
                             <div>
-                                <b>GitHub Profile</b>
+                                <b>Instagram Profile</b>
                                 <input type='text' />
                                 <div className="space-50" />
                             </div>
@@ -67,7 +67,7 @@ const Edit = () => {
                             </div>
 
                             <div>
-                                <b>Instagram Profile</b>
+                                <b>GitHub Profile</b>
                                 <input type='text' />
                                 <div className="space-50" />
                             </div>

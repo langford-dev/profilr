@@ -6,30 +6,37 @@ import { Github, Linkedin, Twitter } from "../../assets/icons";
 const Style1 = () => {
     return <section className="template-main-view">
         <section className="width-100 template-panel">
-            <section>
-                <Image width="200px" height="200px" src="https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg" alt="langford avatar" className="avatar-lg" />
-                <div className="space-50" />
-                {/* <h2>Hey, 👋</h2> */}
-                <div className="space-20" />
-                <h1>Langford Kwabena</h1>
-                <div className="space-50" />
-                <h2>A UI designer focused on building usable, user centered interfaces that add value to your business.</h2>
-                <div className="space-20" />
-                <h2 className="fade-text">Web developer</h2>
-                <div className="space-20" />
-
-                <div className="flex flex-row-center">
-                    <Github />
-                    <div className="space-30" />
-                    <Linkedin />
-                    <div className="space-30" />
-                    <Twitter />
+            <div>
+                <div className='template-banner-container'>
+                    <div className="template-banner"></div>
+                    <div className='avatar-container'>
+                        <Image width="200px" height="200px" src="https://pbs.twimg.com/profile_images/1494065115628548099/IOVenzqn_400x400.jpg" alt="langford avatar" className="avatar-lg" id="avatar-lg" />
+                    </div>
                 </div>
 
-                <div className="space-50" />
-                <div className="line" />
-                <div className="space-50" />
-            </section>
+                <section>
+                    <div className="space-50" />
+                    <div className="space-20" />
+                    <h1>Langford Kwabena</h1>
+                    <div className="space-50" />
+                    <h2>A UI designer focused on building usable, user centered interfaces that add value to your business.</h2>
+                    <div className="space-20" />
+                    <h2 className="fade-text">Web developer</h2>
+                    <div className="space-20" />
+
+                    <div className="flex flex-row-center">
+                        <Github />
+                        <div className="space-30" />
+                        <Linkedin />
+                        <div className="space-30" />
+                        <Twitter />
+                    </div>
+                </section>
+            </div>
+
+            <div className="space-50" />
+            <div className="line" />
+            <div className="space-50" />
 
             <section>
                 <h1 className="template-section-title">About me</h1>
