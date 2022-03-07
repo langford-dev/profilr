@@ -19,7 +19,7 @@ body {
 }
 
 :root {
-  --bg-color: #fff;
+  --bg-color: #f7f7f960;
   --grey-bg-color: #f9f9f991;
   --section-bg: #f1f1f159;
   --text-color: #000;
@@ -34,7 +34,9 @@ body {
   --invert-text-color: #fff;
   --page-title-bg: #fff;
   --side-nav-btn-bg: #f1f1f1;
+  --container-bg: #fff;
   --side-nav-btn-hover-bg: var(--border-color);
+  --input-bg: #F9FAFB;
 }
 
 [data-theme='dark'] {
@@ -51,6 +53,8 @@ body {
   --page-title-bg: #111;
   --side-nav-btn-bg: var(--border-color);
   --side-nav-btn-hover-bg: #1d1d1d;
+  --container-bg: #101010;
+  --input-bg: #0d0d0d;
 }
 
 a {
@@ -121,6 +125,38 @@ header {
 
 .app-header-wrapper .logo {
   margin-right: 180px;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--border-color);
+  background: var(--container-bg);
+  margin-right: 10px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.container textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  background: transparent;
+  color: var(--text-colors)
+}
+
+.container input[type=text], .container textarea {
+  /* margin-top: -20px; */
+  background: var(--input-bg);
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: inherit;
+  border: 2px solid var(--border-color);
+}
+
+.container-child {
+  margin-right: 50px
 }
 
 header nav a {
@@ -214,6 +250,11 @@ main {
 
 .flex-column {
   flex-direction: column;
+}
+
+.flex-top {
+  display: flex;
+  align-items: flex-start;
 }
 
 .space-10 {
@@ -564,11 +605,20 @@ input[type=text]:focus {
   }
 
   h1 {
+    line-height: 60px;
     /* font-size: 1.3rem; */
   }
 
-  input[type=text] {
-    font-size: inherit;
+  .app-view-content {
+    padding: 20px
+  }
+
+  .container input[type=text], .container textarea {
+    width: 73vw;
+  }
+
+  .container {
+    flex-direction: column;
   }
 }
 
