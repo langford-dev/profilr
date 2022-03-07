@@ -585,6 +585,24 @@ input[type=text]:focus {
   display: none;
 }
 
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #000;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00000070;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+}
 
 @media screen and (max-width:768px) {
   .side-nav {

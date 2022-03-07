@@ -30,8 +30,8 @@ const AppSideNav = () => {
             <div>
                 <Link passHref={true} href="/">
                     <div className={currentRoute === "/" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
-                        <HomeIcon />
-                        <p>Home</p>
+                        <AnalyticsIcon />
+                        <p>Dashboard</p>
                     </div>
                 </Link>
                 {/* <Link passHref={true} href="/explore">
@@ -41,12 +41,12 @@ const AppSideNav = () => {
                     </div>
                 </Link> */}
 
-                <Link passHref={true} href="/analytics">
+                {/* <Link passHref={true} href="/analytics">
                     <div className={currentRoute === "/analytics" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <AnalyticsIcon />
                         <p>Analytics</p>
                     </div>
-                </Link>
+                </Link> */}
                 <Link passHref={true} href="/appearance">
                     <div className={currentRoute === "/appearance" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <PaintBrushIcon />

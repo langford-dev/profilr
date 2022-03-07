@@ -19,7 +19,7 @@ const Preview = () => {
 
                         <div className="flex-between">
                             <h1>Preview</h1>
-                            <Button label='Save changes' />
+                            {/* <Button label='Save changes' /> */}
                         </div>
 
                         <div className="space-50" />

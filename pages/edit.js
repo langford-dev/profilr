@@ -1,18 +1,37 @@
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 import AppSideNav from "../components/appSideNav";
 import Button from "../components/button";
 import PersonalInfoContainer from "../components/edit/personalInfoContainer";
 import PageTitle from "../components/pageTitle";
 
 const Edit = () => {
+    const [showAddWorkModal, setShowAddWorkModal] = useState(false)
+
+    const AddWorkModal = () => {
+        // return <></>
+        if (showAddWorkModal) return <div className="modal" onClick={() => setShowAddWorkModal(false)}>
+            <div className="modal-content">
+                <h2>Add your work</h2>
+            </div>
+        </div>
+
+        return <></>
+    }
+
     return <div className='app-main'>
         <AppSideNav />
+
+        <AddWorkModal />
 
         <div className='app-view'>
             <div className='app-view-content'>
                 <div className='app-view-content-wrapper'>
 
-                    <h1>Edit your profile</h1>
+                    <div className="flex-between">
+                        <h1>Edit your profile</h1>
+                        <Link href='/preview'><div className="btn">Preview</div></Link>
+                    </div>
                     <div className="space-20" />
                     <p>These changes are public and will reflect in your profile page</p>
                     <div className="space-50" />
@@ -80,7 +99,7 @@ const Edit = () => {
                     <div className="container">
                         <div className="flex-between">
                             <h2>Your work</h2>
-                            <div><Button label='Add a project' /></div>
+                            <div><Button onPressed={() => setShowAddWorkModal(true)} label='Add a project' /></div>
                         </div>
 
                         <div>
