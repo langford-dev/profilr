@@ -7,7 +7,7 @@ const AppHome = () => {
         <div className='app-main'>
             <AppSideNav />
             <div className='app-view'>
-                <PageTitle title='Welcome Jeff 👋' />
+                <PageTitle title='Analytics' />
 
                 <div className='app-view-content'>
 

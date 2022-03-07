@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Github, Linkedin, Twitter } from "../../assets/icons";
 
 const Style1 = (props) => {
     return <section className="template-main-view">
@@ -11,8 +12,19 @@ const Style1 = (props) => {
                 {/* <h2>Hey, 👋</h2> */}
                 <div className="space-20" />
                 <h1>Langford Kwabena</h1>
+                <div className="space-50" />
+                <h2>A UI designer focused on building usable, user centered interfaces that add value to your business.</h2>
                 <div className="space-20" />
                 <h2 className="fade-text">Web developer</h2>
+                <div className="space-20" />
+
+                <div className="flex flex-row-center">
+                    <Github />
+                    <div className="space-30" />
+                    <Linkedin />
+                    <div className="space-30" />
+                    <Twitter />
+                </div>
 
                 <div className="space-50" />
                 <div className="line" />
