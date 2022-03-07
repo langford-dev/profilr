@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import AppSideNav from "../components/appSideNav";
-import Button from "../components/button";
-import PageTitle from "../components/pageTitle";
-import Style1 from "../components/previews/style-1";
+import AppSideNav from "../../components/appSideNav";
+import Button from "../../components/button";
+import PageTitle from "../../components/pageTitle";
+import Style1 from "../../components/previews/style-1";
 
 const Preview = () => {
     return <Style1 />

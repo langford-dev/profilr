@@ -1,6 +1,6 @@
 import React from 'react'
-import AppSideNav from '../components/appSideNav'
-import PageTitle from '../components/pageTitle'
+import AppSideNav from '../../components/appSideNav'
+import PageTitle from '../../components/pageTitle'
 
 const Explore = () => {
     return <div>

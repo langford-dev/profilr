@@ -99,7 +99,7 @@ const Style1 = () => {
                 <h1 className="template-section-title">Places ive worked</h1>
                 <div className="space-50" />
                 <ul>
-                    <details open>
+                    <details>
                         <summary>Google Enterprise</summary>
                         <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
                     </details>

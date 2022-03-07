@@ -1,13 +1,13 @@
 import React from 'react'
-import AppSideNav from '../components/appSideNav'
-import PageTitle from '../components/pageTitle'
+import AppSideNav from '../../components/appSideNav'
+import PageTitle from '../../components/pageTitle'
 
-const Upgrade = () => {
+const Home = () => {
     return <div>
         <div className='app-main'>
             <AppSideNav />
             <div className='app-view'>
-                <PageTitle title='Upgrade' />
+                <PageTitle title='Analytics' />
 
                 <div className='app-view-content'>
 
@@ -18,4 +18,4 @@ const Upgrade = () => {
     </div>
 }
 
-export default Upgrade 
+export default Home 

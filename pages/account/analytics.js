@@ -1,8 +1,8 @@
 import React from 'react'
-import AppSideNav from '../components/appSideNav'
-import PageTitle from '../components/pageTitle'
+import AppSideNav from '../../components/appSideNav'
+import PageTitle from '../../components/pageTitle'
 
-const AppHome = () => {
+const Analytics = () => {
     return <div>
         <div className='app-main'>
             <AppSideNav />
@@ -12,10 +12,11 @@ const AppHome = () => {
                 <div className='app-view-content'>
 
 
+
                 </div>
             </div>
         </div>
     </div>
 }
 
-export default AppHome 
+export default Analytics 

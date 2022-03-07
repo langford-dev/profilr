@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { Github, Linkedin, Twitter } from "../assets/icons";
+import { Github, Linkedin, Twitter } from "../../assets/icons";
 import Image from "next/image";
-import ProfileHeader from "../components/profileHeader";
-import Fab from "../components/fab";
+import ProfileHeader from "../../components/profileHeader";
+import Fab from "../../components/fab";
 
 const Profile = () => {
 

@@ -28,8 +28,8 @@ const AppSideNav = () => {
             <Image src='https://res.cloudinary.com/nimmble/image/upload/v1646519116/gdf-removebg-preview_1_or91ud.png' width="90px" height="75px" />
 
             <div>
-                <Link passHref={true} href="/">
-                    <div className={currentRoute === "/" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                <Link passHref={true} href="/account/home">
+                    <div className={currentRoute === "/account/home" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <AnalyticsIcon />
                         <p>Dashboard</p>
                     </div>
@@ -47,26 +47,26 @@ const AppSideNav = () => {
                         <p>Analytics</p>
                     </div>
                 </Link> */}
-                <Link passHref={true} href="/appearance">
-                    <div className={currentRoute === "/appearance" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                <Link passHref={true} href="/account/appearance">
+                    <div className={currentRoute === "/account/appearance" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <PaintBrushIcon />
                         <p>Appearance</p>
                     </div>
                 </Link>
-                <Link passHref={true} href="/edit">
-                    <div className={currentRoute === "/create/home" || currentRoute === '/edit' || currentRoute === "/create/step-1" || currentRoute === "/create/step-2" || currentRoute === "/create/step-3" || currentRoute === '/preview' ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                <Link passHref={true} href="/account/edit">
+                    <div className={currentRoute === "/account/edit" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <Create />
                         <p>Edit profile</p>
                     </div>
                 </Link>
-                <Link passHref={true} href="/settings">
-                    <div className={currentRoute === "/settings" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                <Link passHref={true} href="/account/settings">
+                    <div className={currentRoute === "/account/settings" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <SettingsIcon />
                         <p>Settings</p>
                     </div>
                 </Link>
-                <Link passHref={true} href="/upgrade">
-                    <div className={currentRoute === "/upgrade" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                <Link passHref={true} href="/account/upgrade">
+                    <div className={currentRoute === "/account/upgrade" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <ShieldIcon />
                         <p>Upgrade</p>
                     </div>

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import AppSideNav from "../components/appSideNav";
-import Button from "../components/button";
-import PersonalInfoContainer from "../components/edit/personalInfoContainer";
-import PageTitle from "../components/pageTitle";
+import AppSideNav from "../../components/appSideNav";
+import Button from "../../components/button";
+import PersonalInfoContainer from "../../components/edit/personalInfoContainer";
+import PageTitle from "../../components/pageTitle";
 
 const Edit = () => {
     const [showAddWorkModal, setShowAddWorkModal] = useState(false)
@@ -33,7 +33,7 @@ const Edit = () => {
                         <div className="flex">
                             <Button label='Save changes' />
                             <div className="space-50" />
-                            <Link passHref={true} href='/preview'><div className="btn ghost-btn">Preview</div></Link>
+                            <Link passHref={true} href='/account/preview'><div className="btn ghost-btn">Preview</div></Link>
                         </div>
                     </div>
                     <div className="space-20" />
