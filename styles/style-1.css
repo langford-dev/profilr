@@ -99,9 +99,10 @@ summary p {
 }
 
 @media screen and (max-width:768px) {
-    .template-panel {
+
+    .template-panel section {
         padding: 20px;
-        padding-top: 70px;
+        /* padding-top: 70px; */
     }
 
     .template-main-view {
