@@ -28,6 +28,13 @@ const PersonalInfoContainer = () => {
             <textarea type='text' />
             <div className="space-30" />
         </div>
+
+        <div>
+            <b>Skills</b>
+            <div><small className="fade-text">Enter your skills separated by a comma eg. HTML,CSS,Photoshop</small></div>
+            <input type='text' placeholder="" />
+            <div className="space-30" />
+        </div>
     </div>
 }
 

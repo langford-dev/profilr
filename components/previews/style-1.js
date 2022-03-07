@@ -36,7 +36,7 @@ const Style1 = (props) => {
                 <div className="space-50" />
             </section>
 
-            <section id="my-experience">
+            {/* <section id="my-experience">
                 <h1 className="template-section-title">My Experience</h1>
                 <div className="space-50" />
                 <div className="space-50" />
@@ -59,7 +59,7 @@ const Style1 = (props) => {
                         <input type="range" value="90" onChange={() => { }} />
                     </li>
                 </ul>
-            </section>
+            </section> */}
 
             <section>
                 <div className="space-50" />

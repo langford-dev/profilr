@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { AnalyticsIcon, BellIcon, CompassIcon, Create, HomeIcon, ProfileIcon, SettingsIcon, ShieldIcon } from "../assets/icons";
+import { AnalyticsIcon, BellIcon, CompassIcon, Create, HomeIcon, PaintBrushIcon, ProfileIcon, SettingsIcon, ShieldIcon } from "../assets/icons";
 import { ThemeToggle } from "./themeToggle";
 import { useRouter } from 'next/router'
 import Image from "next/image";
@@ -34,10 +34,23 @@ const AppSideNav = () => {
                         <p>Home</p>
                     </div>
                 </Link>
-                <Link passHref={true} href="/explore">
+                {/* <Link passHref={true} href="/explore">
                     <div className={currentRoute === "/explore" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <CompassIcon />
                         <p>Explore</p>
+                    </div>
+                </Link> */}
+
+                <Link passHref={true} href="/analytics">
+                    <div className={currentRoute === "/analytics" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                        <AnalyticsIcon />
+                        <p>Analytics</p>
+                    </div>
+                </Link>
+                <Link passHref={true} href="/appearance">
+                    <div className={currentRoute === "/appearance" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                        <PaintBrushIcon />
+                        <p>Appearance</p>
                     </div>
                 </Link>
                 <Link passHref={true} href="/edit">
@@ -46,22 +59,16 @@ const AppSideNav = () => {
                         <p>Edit profile</p>
                     </div>
                 </Link>
-                <Link passHref={true} href="/upgrade">
-                    <div className={currentRoute === "/upgrade" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
-                        <ShieldIcon />
-                        <p>Upgrade</p>
-                    </div>
-                </Link>
-                <Link passHref={true} href="/analytics">
-                    <div className={currentRoute === "/analytics" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
-                        <AnalyticsIcon />
-                        <p>Analytics</p>
-                    </div>
-                </Link>
                 <Link passHref={true} href="/settings">
                     <div className={currentRoute === "/settings" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
                         <SettingsIcon />
                         <p>Settings</p>
+                    </div>
+                </Link>
+                <Link passHref={true} href="/upgrade">
+                    <div className={currentRoute === "/upgrade" ? "side-nav-btn active-side-nav-btn" : "side-nav-btn"}>
+                        <ShieldIcon />
+                        <p>Upgrade</p>
                     </div>
                 </Link>
             </div>

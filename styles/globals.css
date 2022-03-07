@@ -134,13 +134,18 @@ header {
   background: var(--container-bg);
   margin-right: 10px;
   height: auto;
+}
+
+.flex-container {
+
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start
 }
 
 .container textarea {
   width: 100%;
   border: none;
+  height: 200px;
   resize: none;
   background: transparent;
   color: var(--text-colors)
@@ -617,7 +622,7 @@ input[type=text]:focus {
     width: 73vw;
   }
 
-  .container {
+  .flex-container {
     flex-direction: column;
   }
 }
