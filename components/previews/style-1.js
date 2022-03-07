@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Github, Linkedin, Twitter } from "../../assets/icons";
 
-const Style1 = (props) => {
+const Style1 = () => {
     return <section className="template-main-view">
         <section className="width-100 template-panel">
             <section>
