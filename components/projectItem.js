@@ -6,6 +6,7 @@ const ProjectItem = ({ name, description, onRemove }) => {
         <div className="project-img" />
         <b>{name}</b>
         <p>{description}</p>
+        <div className="space-10" />
         <Button label='remove' onPressed={onRemove} />
     </div>
 }
