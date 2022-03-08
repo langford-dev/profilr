@@ -63,7 +63,7 @@ details {
 summary {
     /* margin: 10px 0; */
     /* margin-top: 20px; */
-    background: #f1f1f1;
+    background: var(--summary-bg);
     border-radius: 10px;
     padding: 7px;
     font-weight: bold;
@@ -149,6 +149,14 @@ summary p {
     .template-panel section {
         padding: 20px;
         /* padding-top: 70px; */
+    }
+
+    .template-projects-container {
+        flex-direction: column;
+    }
+
+    .template-project-item {
+        width: 100%
     }
 
     .template-intro-text {

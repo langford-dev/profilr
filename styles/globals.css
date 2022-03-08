@@ -37,6 +37,8 @@ body {
   --container-bg: #fff;
   --side-nav-btn-hover-bg: var(--border-color);
   --input-bg: #F9FAFB;
+  --summary-bg: #f1f1f1;
+  --modal-bg: #fff;
 }
 
 [data-theme='dark'] {
@@ -55,6 +57,8 @@ body {
   --side-nav-btn-hover-bg: #1d1d1d;
   --container-bg: #101010;
   --input-bg: #0d0d0d;
+  --summary-bg: #181818;
+  --modal-bg: #080808;
 }
 
 a {
@@ -134,6 +138,12 @@ header {
   background: var(--container-bg);
   margin-right: 10px;
   height: auto;
+}
+
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .flex-container {
@@ -634,7 +644,7 @@ textarea {
 }
 
 .modal-content {
-  background: #fff;
+  background: var(--modal-bg);
   padding: 30px;
   margin: 20px;
   width: 100%;
@@ -741,6 +751,19 @@ textarea {
 
   .flex-container {
     flex-direction: column;
+  }
+
+  .container-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-title .btn {
+    margin-top: 20px;
+  }
+
+  .project-item {
+    width: 100%;
   }
 }
 
