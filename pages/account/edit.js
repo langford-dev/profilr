@@ -84,35 +84,43 @@ const Edit = () => {
                                 <div className="space-50" />
                             </div>
 
-                            <div>
-                                <b>GitHub Profile</b>
-                                <input type='text' />
+                            <details>
+                                <summary>Add more socials</summary>
                                 <div className="space-50" />
-                            </div>
+                                <div>
+                                    <div>
+                                        <b>GitHub Profile</b>
+                                        <input type='text' />
+                                        <div className="space-50" />
+                                    </div>
 
-                            <div>
-                                <b>Stackoverflow Profile</b>
-                                <input type='text' />
-                                <div className="space-50" />
-                            </div>
+                                    <div>
+                                        <b>Stackoverflow Profile</b>
+                                        <input type='text' />
+                                        <div className="space-50" />
+                                    </div>
 
-                            <div>
-                                <b>Behance profile</b>
-                                <input type='text' />
-                                <div className="space-50" />
-                            </div>
+                                    <div>
+                                        <b>Behance profile</b>
+                                        <input type='text' />
+                                        <div className="space-50" />
+                                    </div>
 
-                            <div>
-                                <b>Hashnode Profile</b>
-                                <input type='text' />
-                                <div className="space-50" />
-                            </div>
+                                    <div>
+                                        <b>Hashnode Profile</b>
+                                        <input type='text' />
+                                        <div className="space-50" />
+                                    </div>
 
-                            <div>
-                                <b>Dev.to Profile</b>
-                                <input type='text' />
-                                <div className="space-50" />
-                            </div>
+                                    <div>
+                                        <b>Dev.to Profile</b>
+                                        <input type='text' />
+                                        <div className="space-50" />
+                                    </div>
+                                </div>
+                            </details>
+
+
                         </div>
                     </div>
 

@@ -726,7 +726,12 @@ textarea {
   }
 
   .app-view-content {
-    padding: 20px
+    padding: 20px;
+    padding-top: 100px;
+  }
+
+  .app-view-content-wrapper {
+    padding-top: 0
   }
 
   .container input, .container textarea {
