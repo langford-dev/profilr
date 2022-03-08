@@ -25,8 +25,8 @@ const Style1 = () => {
                         <div className="space-50" />
                         <div className="space-20" />
                         <h1>Langford Kwabena</h1>
-                        <div className="space-50" />
-                        <h2>A UI designer focused on building usable, user centered interfaces that add value to your business.</h2>
+                        {/* <div className="space-50" /> */}
+                        {/* <h2>A UI designer focused on building usable, user centered interfaces that add value to your business.</h2> */}
                         <div className="space-20" />
                         <h2 className="fade-text">Web developer</h2>
                         <div className="space-20" />
