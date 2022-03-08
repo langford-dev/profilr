@@ -119,7 +119,7 @@ const Edit = () => {
         if (showAddCompanyModal) return <div className="modal">
             <div className="modal-content">
                 <div className="flex-between">
-                    <h2>Add a previous company</h2>
+                    <h2>Add previous company</h2>
                     <b className="modal-close-btn" onClick={() => setShowAddCompanyModal(false)}>Close &times;</b>
                 </div>
 

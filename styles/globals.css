@@ -39,6 +39,7 @@ body {
   --input-bg: #F9FAFB;
   --summary-bg: #f1f1f1;
   --modal-bg: #fff;
+  --bottom-nav-bg: #fff;
 }
 
 [data-theme='dark'] {
@@ -59,6 +60,7 @@ body {
   --input-bg: #0d0d0d;
   --summary-bg: #181818;
   --modal-bg: #080808;
+  --bottom-nav-bg: #101010;
 }
 
 a {
@@ -343,7 +345,7 @@ footer {
 .project-item {
   /* margin-right: 20px; */
   width: 48%;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .fab-container {
@@ -685,10 +687,14 @@ textarea {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    background: #fff;
+    background: var(--bottom-nav-bg);
     height: 60px;
     z-index: 111;
     border-top: 2px solid var(--border-color);
+  }
+
+  .bottom-nav svg {
+    color: var(--svg-bg);
   }
 
   .bottom-nav-wrapper {
