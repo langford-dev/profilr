@@ -621,6 +621,17 @@ textarea {
   color: var(--accent-color);
 }
 
+.empty-state-container {
+  /* background: #000; */
+  width: 100%;
+  height: 80vh;
+  font-weight: bold;
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-content {
   background: #fff;
   padding: 30px;

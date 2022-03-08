@@ -3,6 +3,7 @@ import React from "react";
 import AppSideNav from "../../components/appSideNav";
 import BottomNav from "../../components/bottomNav";
 import Button from "../../components/button";
+import EmptyState from "../../components/emptyState";
 import PageTitle from "../../components/pageTitle";
 
 const Appearance = () => {
@@ -11,19 +12,13 @@ const Appearance = () => {
         <BottomNav />
 
         <div className='app-view'>
-            <PageTitle title='Edit profile' />
+            <PageTitle title='Appearance' />
             <div className='app-view-content'>
-                <div className='app-view-content-wrapper'>
-                    {/* <div className="flex inner-page-title-btns">
-                        <Button label='Save changes' />
-                        <div className="space-50" />
-                        <Link passHref={true} href='/account/preview'><div className="btn ghost-btn">Preview</div></Link>
-                    </div>
-                    <div className="space-20" />
-                    <p>These changes are public and will reflect in your profile page</p>
-                    <div className="space-50" /> */}
+                <EmptyState label='More Themes coming soon' />
+                {/* <div className='app-view-content-wrapper'> */}
 
-                    <div className="container flex-container">
+
+                {/* <div className="container flex-container">
                         <h2>Pick a theme</h2>
                     </div>
 
@@ -38,8 +33,8 @@ const Appearance = () => {
                         <div>
 
                         </div>
-                    </div>
-                </div>
+                    </div> */}
+                {/* </div> */}
             </div>
         </div>
     </div >
