@@ -13,7 +13,17 @@ const Home = () => {
 
                 <div className='app-view-content'>
 
+                    <div className='flex'>
+                        <div className='container content-width'>
+                            <b>Total clicks</b>
+                            <h1>520</h1>
+                        </div>
+                        <div className='container content-width'>
+                            <b>Views</b>
+                            <h1>520</h1>
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>

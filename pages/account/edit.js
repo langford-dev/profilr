@@ -49,10 +49,6 @@ const Edit = () => {
             <PageTitle title='Edit profile' />
             <div className='app-view-content'>
                 <div className='app-view-content-wrapper'>
-
-                    {/* <div className="flex-between inner-page-title">
-                        <h1>Edit your profile</h1>
-                    </div> */}
                     <div className="flex inner-page-title-btns">
                         <Button label='Save changes' />
                         <div className="space-50" />

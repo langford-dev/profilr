@@ -300,6 +300,7 @@ main {
 
 footer {
   padding-top: 30px;
+  margin-bottom: 100px;
   /* opacity: .5; */
 }
 
@@ -561,6 +562,7 @@ textarea {
   border-radius: 10px;
   /* font-weight: 700; */
   cursor: pointer;
+  font-size: inherit;
   user-select: none;
   width: min-content;
   white-space: nowrap;
@@ -630,6 +632,10 @@ textarea {
 
 .bottom-nav {
   display: none;
+}
+
+.content-width {
+  width: max-content;
 }
 
 @media screen and (max-width:768px) {
