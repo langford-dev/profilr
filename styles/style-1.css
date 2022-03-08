@@ -54,7 +54,7 @@
     font-weight: bold;
 }
 
-.template-workplaces {}
+.template-projectplaces {}
 
 details {
     margin-bottom: 20px;
@@ -108,6 +108,26 @@ summary p {
 
 .template-intro-text {
     margin-top: 100px;
+}
+
+.template-projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.template-project-item {
+    /* background: #000; */
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.template-project-img {
+    background: var(--border-color);
+    width: 100%;
+    height: 300px;
+    /* border-radius: 30px; */
 }
 
 /* #avatar-lg {

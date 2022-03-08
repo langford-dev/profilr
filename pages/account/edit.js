@@ -1,5 +1,7 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ProjectItem from "../../components/appProjectItem";
+import appProjectItem from "../../components/appProjectItem";
 import AppSideNav from "../../components/appSideNav";
 import BottomNav from "../../components/bottomNav";
 import Button from "../../components/button";
@@ -8,6 +10,48 @@ import PageTitle from "../../components/pageTitle";
 
 const Edit = () => {
     const [showAddWorkModal, setShowAddWorkModal] = useState(false)
+    const [projectsArray, setProjectsArray] = useState([])
+
+    useEffect(() => {
+        setProjectsArray([
+            {
+                name: "Uber clone",
+                description: "lorem freaking ipsum hahaha its so long"
+            },
+            {
+                name: "Uber clone",
+                description: "lorem freaking ipsum hahaha its so long"
+            },
+            {
+                name: "Uber clone",
+                description: "lorem freaking ipsum hahaha its so long"
+            }
+        ])
+    }, [])
+
+    const addNewProject = () => {
+        let newProject = {
+            name: "Test Project",
+            description: "Hello world"
+        }
+
+        setProjectsArray([...projectsArray, newProject])
+    }
+
+    const removeProject = (index) => {
+        let projectsArrayClone = [...projectsArray]
+        console.log(index)
+
+        for (let i = 0; i < projectsArrayClone.length; i++) {
+            const element = projectsArrayClone[i];
+            if (element === projectsArrayClone[index]) {
+                projectsArrayClone.splice(index, 1)
+                setProjectsArray(projectsArrayClone)
+                console.log(projectsArrayClone)
+                return
+            }
+        }
+    }
 
     const AddWorkModal = () => {
         if (showAddWorkModal) return <div className="modal">
@@ -33,7 +77,7 @@ const Edit = () => {
 
                 <div className="space-20" />
 
-                <Button label='Add work' />
+                <Button onPressed={addNewProject} label='Add work' />
             </div>
         </div >
 
@@ -128,12 +172,16 @@ const Edit = () => {
 
                     <div className="container">
                         <div className="flex-between">
-                            <h2>Your work</h2>
+                            <h2>Projects ive done</h2>
                             <div><Button onPressed={() => setShowAddWorkModal(true)} label='Add a project' /></div>
                         </div>
 
-                        <div>
-
+                        <div className="projects-container">
+                            {
+                                projectsArray.map((project, index) => {
+                                    return <ProjectItem onRemove={() => removeProject(index)} key={index} name={`${project.name} + ${index}`} description={project.description} />
+                                })
+                            }....
                         </div>
                     </div>
                 </div>

@@ -62,7 +62,7 @@ const Style1 = () => {
                     <div className="space-50" />
                 </section>
 
-                {/* <section id="my-experience">
+                {/* <section id="template-experience">
                 <h1 className="template-section-title">My Experience</h1>
                 <div className="space-50" />
                 <div className="space-50" />
@@ -109,7 +109,7 @@ const Style1 = () => {
                     <div className="space-50" />
                 </section>
 
-                <section className="template-workplaces">
+                <section className="template-projectplaces">
                     <h1 className="template-section-title">Places ive worked</h1>
                     <div className="space-50" />
                     <ul>
@@ -136,30 +136,30 @@ const Style1 = () => {
                     <div className="space-50" />
                 </section>
 
-                <section id="my-works">
+                <section id="template-projects/">
                     <h1 className="template-section-title">My Works</h1>
                     <div className="space-50" />
-                    <ul className="my-works-container">
-                        <li className="my-work-item">
-                            <div className="my-work-img" />
+                    <ul className="template-projects-container">
+                        <li className="template-project-item">
+                            <div className="template-project-img" />
                             <div className="space-20" />
                             <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
                         </li>
-                        <li className="my-work-item">
-                            <div className="my-work-img" />
+                        <li className="template-project-item">
+                            <div className="template-project-img" />
                             <div className="space-20" />
                             <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
                         </li>
-                        <li className="my-work-item">
-                            <div className="my-work-img" />
+                        <li className="template-project-item">
+                            <div className="template-project-img" />
                             <div className="space-20" />
                             <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
                         </li>
-                        <li className="my-work-item">
-                            <div className="my-work-img" />
+                        <li className="template-project-item">
+                            <div className="template-project-img" />
                             <div className="space-20" />
                             <Link passHref={true} href="/">google.com</Link>
                             <p>Description</p>
